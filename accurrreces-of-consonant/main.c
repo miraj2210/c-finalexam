@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void countConsonants(char str[])
 {
     int i, count;
@@ -24,4 +26,16 @@ void countConsonants(char str[])
             }
         }
     }
+}
+
+int main()
+{
+    char str[10];
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    countConsonants(str);
+
+    return 0;
 }
